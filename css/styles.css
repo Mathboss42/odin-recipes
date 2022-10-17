@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(79, 110, 139);
+}
+
+h1, h2, h3, p, ol, ul {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 444px;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h1, h2, h3, p, ul, ol {
+    color: bisque;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul, ol {
+    list-style: none;
+    font-size: 28px;
+}
+
+ol {
+    counter-reset: li
+}
+
+a, .link-item li::before, .link-item li::before {
+    color: aqua;
+}
+
+ul li::before, ol li::before {
+    content: counter(li);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+li {
+    counter-increment: li;
+}
+
+.steps, .ingredients {
+    font-size: 22px;
+}
+
+.star {
+    color: rgb(255, 0, 0);
+}
